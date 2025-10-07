@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 15% 10%;
+    --foreground: 46 90% 55%;
+    
+    --primary: 46 90% 55%;
+    --primary-foreground: 220 15% 10%;
+    
+    --secondary: 220 15% 15%;
+    --secondary-foreground: 46 90% 50%;
+    
+    --tertiary: 0 0% 100%;
+    --tertiary-foreground: 220 15% 10%;
+    
+    --neutral: 0 0% 95%;
+    --neutral-foreground: 0 0% 15%;
+    
+    --muted: 0 0% 20%;
+    --muted-foreground: 0 0% 75%;
+    
+    --accent: 46 90% 55%;
+    --accent-foreground: 220 15% 10%;
+    
+    --card: 220 15% 12%;
+    --card-foreground: 0 0% 90%;
+    
+    --border: 0 0% 30%;
+    --input: 0 0% 30%;
+    --ring: 46 90% 55%;
+    
+    --success: 145 50% 45%;
+    --warning: 35 90% 55%;
+    
+    --gray-50: 0 0% 98%;
+    --gray-100: 0 0% 95%;
+    --gray-200: 0 0% 90%;
+    --gray-300: 0 0% 75%;
+    --gray-400: 0 0% 60%;
+    --gray-500: 0 0% 45%;
+    --gray-600: 0 0% 30%;
+    --gray-700: 0 0% 20%;
+    --gray-800: 0 0% 10%;
+    --gray-900: 0 0% 5%;
+    
+    --radius: 8px;
+  }
+  
+  * {
+    @apply border-border;
+  }
+  
+  html {
+    @apply scroll-smooth;
+    @apply text-foreground;
+  }
+  
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display text-foreground;
+  }
+}
+
+@layer utilities {
+  .text-gradient-gold {
+    @apply bg-gradient-2 bg-clip-text text-transparent;
+  }
+}
